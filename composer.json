@@ -52,7 +52,7 @@
         "ext-json": "*",
         "ext-pdo": "*",
         "ext-odbc": "*",
-        "doctrine/dbal": "^2.3",
+        "doctrine/dbal": "dev-master",
         "symfony/options-resolver": "^3.2|^4.3"
     },
     "require-dev": {
