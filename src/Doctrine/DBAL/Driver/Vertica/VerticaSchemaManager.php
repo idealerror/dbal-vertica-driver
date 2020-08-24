@@ -138,6 +138,11 @@ class VerticaSchemaManager extends PostgreSqlSchemaManager
             // idealerror: i'd rather use varchar.. I don't trust text
             $dbType = 'varchar';
         }
+        
+        if ($dbType === 'text') {
+            // idealerror: i'd rather use varchar.. I don't trust text
+            $dbType = 'varchar';
+        }
 
         if ($tableColumn['comment']) {
             $columnComments = json_decode($tableColumn['comment'], true);
