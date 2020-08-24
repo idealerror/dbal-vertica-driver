@@ -432,8 +432,9 @@ class VerticaPlatform extends PostgreSqlPlatform
             'char' => 'string',
             'character' => 'string',
 
-            // custom type, Vertica has only varchar, but we will treat bi varchars (4k+) as text
-            'text' => 'text',
+            // original: custom type, Vertica has only varchar, but we will treat bi varchars (4k+) as text
+            // idealerror: I'd rather use varchar
+            'text' => 'varchar',
 
             'date' => 'date',
             'datetime' => 'datetime',
