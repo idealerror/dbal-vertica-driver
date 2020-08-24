@@ -135,7 +135,8 @@ class VerticaSchemaManager extends PostgreSqlSchemaManager
         // Remove size declaration from type, ex. numeric(10,2) -> numeric
         $dbType = rtrim($tableColumn['data_type'], '()0123456789,');
         if ($dbType === 'varchar' && $tableColumn['character_maximum_length'] == 65000) {
-            $dbType = 'text';
+            // idealerror: i'd rather use varchar.. I don't trust text
+            $dbType = 'varchar';
         }
 
         if ($tableColumn['comment']) {
