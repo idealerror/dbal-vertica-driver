@@ -49,9 +49,6 @@
     },
     "require": {
         "php": ">=7.0",
-        "ext-json": "*",
-        "ext-pdo": "*",
-        "ext-odbc": "*",
         "doctrine/dbal": "~2.10",
         "symfony/options-resolver": "^3.2|^4.3"
     },
