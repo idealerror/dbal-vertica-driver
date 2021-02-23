@@ -113,6 +113,7 @@ class ODBCStatement extends PDOStatement implements /*Iterator, */Statement
 //     public function setFetchMode($fetchMode, $classNameObject = null, $ctorarfg = null)
     {
         $this->defaultFetchMode = $fetchMode;
+        return TRUE;
     }
 
     /**
